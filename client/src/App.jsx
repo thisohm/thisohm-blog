@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Dashboard from './pages/Dashboard'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Project from './pages/Project'
-import Header from './component/Header';
+import Header from './component/Header'
+import Footer from './component/FooterSection'
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/project' element={<Project />} />
       </Routes>
+
+      <Footer/>
     </BrowserRouter>
   )
 }

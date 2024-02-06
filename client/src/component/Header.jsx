@@ -13,7 +13,7 @@ function Header() {
         <Link to="/" className='self-center'>
             <img src={logo} className='rounded-xl w-[150px] md:w-[120px]'></img>
         </Link>
-
+        
         <Navbar.Collapse className='hidden lg:inline'>
                 <Navbar.Link active={ path === "/" } as={"div"}>
                     <Link to="/">
